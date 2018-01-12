@@ -96,7 +96,7 @@ class Details extends Component {
 
     getZpriv() {
         if (this.state.type === 'Z')
-            return("private key: " + this.state.priv);
+            return("Private Key: " + this.state.priv);
     }
 
     render() {
@@ -191,7 +191,7 @@ class Details extends Component {
                 <Row className="r3">
                     <Col>
                         <p>
-                            Entering your private key here allows you to view your Zclassic Address and print your wallet if you wish.
+                            Entering your private key here allows you to view your Zclassic address and print your wallet if you wish.
                         </p>
                         <p>
                             <b>Warning: make sure you are on ZCLASSICPAPERWALLET.COM !</b>
