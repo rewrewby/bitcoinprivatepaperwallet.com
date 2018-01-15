@@ -56,7 +56,7 @@ export default class Footer extends Component {
                 </div>
                 <div>
                 <p className="footerCopyright">
-                    <a href="https://github.com/johandjoz/zclassicpaperwallet.com" target="_blank">JavaScript Client-Side ZCLASSIC Wallet Generator</a>
+                    <a href="https://github.com/johandjoz/zclassicpaperwallet.com" target="_blank" rel="noopener noreferrer">JavaScript Client-Side ZCLASSIC Wallet Generator</a>
                 </p>
                 <p className="footerCopyright">
                     Send me a memo @ zcH8yxWM5HHkrLKrt9HeTxWYPUqv1kzLYtX44BmkFSvWaixmfibB4U64P81RpDUUtGYuWRW1TPDb4uiB9nPtMfBrBcPv4w7

@@ -29,9 +29,9 @@ export default class MainPanel extends Component {
     getCategories() {
         return [
             { id: 0,    title: "Single Address",        content: Single },
-            { id: 1,    title: "Paper",                 content: Paper },
+            { id: 1,    title: "Paper Wallet",          content: Paper },
             { id: 2,    title: "Brain Wallet",          content: Brain },
-            { id: 3,    title: "Multisig Wallet",       content: Multisig },
+            { id: 3,    title: "Multi-Sig Wallet",      content: Multisig },
             { id: 4,    title: "Bulk Wallet",           content: Bulk },
             { id: 5,    title: "Wallet Details",        content: Details }
         ];

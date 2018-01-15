@@ -123,8 +123,12 @@ a:hover{
     top: 0;
     width: 9999px;
 }
+.navbar-nav {
+  margin-bottom: 0px;
+}
 .zenHeader .nav{
     padding: 6px 0px;
+    padding-bottom: 0px;
 }
 /*________________tab section css___________*/
 
@@ -134,8 +138,10 @@ a:hover{
 }
 .zenTabsWrap > ul > li{
     display: inline-block;
-    width: auto;
     padding-bottom: 10px;
+
+    width: 15.96%;
+    margin: 0.6%;
 }
 .zenTabsWrap > ul > li > a:hover {
   color: #813100;
@@ -152,16 +158,14 @@ a:hover{
     margin: 0px;
     margin-bottom: 10px;
 }
-.zenTabsWrap > ul > li{
-    width: auto;
-}
+
 .zenTabsWrap > ul > li a{
     border-radius: 0;
     font-size: 16px;
-    padding: 12px 0;
+    /*padding: 12px 0;*/
     text-align: center;
     text-transform: capitalize;
-    width: 118px;
+    /*width: 118px;*/
     outline: none;
     background-color: #813100;
     color: #fff;
@@ -179,11 +183,11 @@ a:hover{
 }
 
 .zenTabsWrap .nav-pills>li+li {
-    /*margin-left: 0px !important;*/
+    margin-left: 0px !important;
 }
 
-.zenTabs > div {
-    padding-top: 20px;
+.nav-pills>li {
+  float: none !important;
 }
 
 .zenTabs {

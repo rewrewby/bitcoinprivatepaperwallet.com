@@ -7,7 +7,7 @@ export default class Header extends Component {
 
     render() {
         return (
-            <Navbar id="header" className="zenHeader" fluid={true}>
+            <Navbar id="header" className="zenHeader" fluid={false}>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <img src={logoFull} alt="logo"/>
