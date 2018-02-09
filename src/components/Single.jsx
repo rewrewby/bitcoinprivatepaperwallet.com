@@ -63,10 +63,9 @@ class Single extends Component {
 
     render() {
         return (
-          <Row id="Single">
-            <Col xs={12}>
+          <Col md={12} id="Single">
             <Row className="r1">
-                <Col xs={12}>
+                <Col md={4}>
                     <FormGroup>
                         <Radio name="radioGroup"
                         onMouseDown={() => this.handleCheckRadio('T')}
@@ -81,9 +80,8 @@ class Single extends Component {
                         </Radio>
                     </FormGroup>
                 </Col>
-            </Row>
-            <Row className="r2">
-                <Col xs={12}>
+
+                <Col md={2}>
                     <Button onClick={this.state.type === 'T' ?
                         () => this.genTAddress()
                         : () => this.genZAddress()}
@@ -91,15 +89,15 @@ class Single extends Component {
                         Generate New Address
                     </Button>
                 </Col>
-                <Col xs={12}>
+                <Col md={2}>
                     <Button onClick={window.print}>
                         Print
                     </Button>
                 </Col>
             </Row>
-                <hr />
+
                 {this.state.addr ? (
-                    <Row className="r3">
+                    <Row className="r2">
                         <Col xs={3} className="max-width singleTabs col-xs-offset-3">
                             <h1 style={{color:'green'}}>Public</h1>
                             <h3>ZCL Address</h3>
@@ -133,7 +131,7 @@ class Single extends Component {
                                 </div>
                                 <div className="zentabcode">{this.state.wif}</div>
                             </div>
-                            <p>{this.getZpriv()}</p>
+                            <div>{this.getZpriv()}</div>
                         </Col>
                     </Row>
                 ) : (
@@ -142,7 +140,8 @@ class Single extends Component {
                 <hr />
                 <Row className="r3">
                     <Col>
-                        <p>
+                        <div>
+                          <p>
                             <b>A Zclassic Wallet</b> can be as simple as a single pairing of a Zclassic address with its corresponding Zclassic private key. You can share your address to receive ZCL payments, however your private key is what allows you to unlock, manage, and send your funds - <b>keep it safe</b>.
                         </p>
                         <p>
@@ -167,11 +166,11 @@ class Single extends Component {
                         <br/>
                         <p>
                             <b>To spend your ZCL,</b> you can download the <a href='https://github.com/ZclassicOfficial/Zclassic-swing-wallet-ui/releases' target="_blank" rel="noopener noreferrer">Zclassic Swing Wallet</a> and import your private key to the p2p client wallet. It is <b>**strongly discouraged**</b> to spend directly from this address without importing the private key into a wallet application, since certain precautions need to be taken so you receive your change!
-                        </p>
+                          </p>
+                        </div>
                     </Col>
                 </Row>
-                </Col>
-            </Row>
+            </Col>
         );
     }
 }
