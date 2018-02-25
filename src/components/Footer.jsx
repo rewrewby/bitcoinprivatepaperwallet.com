@@ -23,8 +23,8 @@ export default class Footer extends Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://btcprivate.pro">
-                                    <img src={bitcointalk} alt="bitcointalk" title="Mining Pool"/>
+                                <a href="http://btcprivate.pro">
+                                    <img src={bitcointalk} alt="mining pool" title="Mining Pool"/>
                                 </a>
                             </li>
                         </ul>
