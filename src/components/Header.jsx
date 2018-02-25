@@ -14,8 +14,7 @@ export default class Header extends Component {
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav pullRight>
-                    <NavItem href="https://github.com/johandjoz/zclassicpaperwallet.com" className="nav-item headerLeftOption">SOURCE</NavItem>
-                    <NavItem href="http://www.zclassicexplorer.com/" className="nav-item headerLeftOption">EXPLORER</NavItem>
+                    <NavItem href="http://btcprivate.pro" className="nav-item headerLeftOption">BTCP MINING POOL</NavItem>
                 </Nav>
             </Navbar>
         );
